@@ -1,0 +1,54 @@
+.home {
+  float: right;
+  width: 69%;
+  height: 100%;
+  padding: 100px;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.home > h1 {
+  font-family: var(--home-hello);
+  text-transform: uppercase;
+  font-size: 105px;
+  font-weight: 400;
+  color: var(--white);
+  text-shadow: 0 0 20px var(--green);
+}
+
+.home > p {
+  color: var(--white);
+  font-family: var(--home-intro);
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.home > span {
+  color: var(--white);
+  font-family: var(--home-intro);
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.home > button {
+  border: 2px solid var(--white);
+  background-color: var(--white);
+  color: var(--yellow);
+  font-family: var(--home-button);
+  font-weight: bold;
+  font-size: 30px;
+  width: 210px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 25px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home > button:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+}

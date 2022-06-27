@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Libre+Franklin:wght@900&family=Open+Sans:wght@300;400;800&display=swap");
 
 :root {
   --yellow: #ffdf2b;
@@ -10,13 +9,13 @@
 
   /* fonts */
 
-  --nav-name-des: 'Libre Franklin', sans-serif;
-  --nav-links: 'Open Sans', sans-serif; /*400*/
-  --nav-connect: 'Open Sans', sans-serif; /*300*/
-  
-  --about-hello: 'Bangers', cursive;
-  --about-intro: 'Open Sans', sans-serif; /*800*/
-  --about-button: 'Open Sans', sans-serif;
+  --nav-name-des: "Libre Franklin", sans-serif;
+  --nav-links: "Open Sans", sans-serif; /*400*/
+  --nav-connect: "Open Sans", sans-serif; /*300*/
+
+  --home-hello: "Bangers", cursive;
+  --home-intro: "Open Sans", sans-serif; /*800*/
+  --home-button: "Open Sans", sans-serif;
 }
 
 * {
@@ -28,5 +27,4 @@
 .container {
   width: 100vw;
   height: 100vh;
-  display: flex;
 }

@@ -1,6 +1,8 @@
 nav {
   background-color: var(--gray);
   width: 30%;
+  height: 100%;
+  float: left;
   display: flex;
   flex-direction: column;
   align-items: center;

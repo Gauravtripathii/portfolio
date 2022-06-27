@@ -11,6 +11,11 @@ nav > .img {
   width: 75px;
   height: 75px;
 }
+nav > .img:hover {
+  transition: 0.2s ease-in-out;
+  width: 85px;
+  height: 85px;
+}
 
 nav > .img > img {
   width: 100%;

@@ -1,0 +1,11 @@
+.portfolio {
+    float: right;
+    width: 69%;
+    height: 100%;
+    padding: 100px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  

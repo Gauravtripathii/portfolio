@@ -1,0 +1,52 @@
+.about {
+  float: right;
+  width: 69%;
+  height: 100%;
+  padding: 40px;
+  background-color: var(--green);
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: none;
+}
+
+.about a {
+    color: var(--white);
+}
+
+.about span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.about > span {
+  font-size: 22px;
+}
+
+.about > .education {
+  width: 50%;
+}
+
+.about > .class > span.topic {
+  font-size: 32px;
+}
+
+.about > .class > div {
+  margin-top: 15px;
+  padding-left: 30px;
+}
+
+.about > .class p.sub-topic {
+  font-size: 20px;
+}
+
+.about > .class span.date {
+  font-size: 15px;
+}
+
+.about > .class p.para {
+  font-size: 15px;
+  font-weight: 800;
+}

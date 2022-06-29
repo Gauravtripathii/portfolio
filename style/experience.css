@@ -59,3 +59,8 @@
   font-weight: 600;
   width: 130px;
 }
+
+.experience > .card > button:hover {
+  color: var(--white);
+  background-color: var(--pink);
+}

@@ -3,7 +3,7 @@
     width: 69%;
     height: 100%;
     padding: 100px;
-    background-color: #000;
+    background-color: var(--blue);
     display: flex;
     flex-direction: column;
     display: none;

@@ -1,11 +1,41 @@
 .portfolio {
-    float: right;
-    width: 69%;
-    height: 100%;
-    padding: 100px;
-    background-color: var(--blue);
-    display: flex;
-    flex-direction: column;
-    display: none;
-  }
-  
+  float: right;
+  width: 69%;
+  height: 100%;
+  padding: 30px;
+  background-color: var(--blue);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.portfolio > .project {
+  position: relative;
+  width: 45%;
+  height: 45%;
+}
+
+.portfolio > .project > img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio > .project > .trans-cover {
+  position: absolute;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 0;
+  font-weight: 600;
+  -webkit-text-stroke: 3px var(--blue);
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s ease;
+}

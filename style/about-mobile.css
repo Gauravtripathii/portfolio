@@ -1,0 +1,16 @@
+@media only screen and (max-width: 500px) {
+  .about {
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    padding: 10px;
+  }
+  .about > .box {
+    width: 100%;
+    height: 23%;
+  }
+  .about > .box > img {
+    height: 70px;
+    width: 70px;
+  }
+}

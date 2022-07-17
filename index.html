@@ -1,163 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/nav-mobile.css" />
     <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./style/home-mobile.css" />
     <link rel="stylesheet" href="./style/about.css" />
     <link rel="stylesheet" href="./style/portfolio.css" />
     <title>GAURAV KUMAR TRIPATHI</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav>
-            <div class="avatar">
-                <img src="./media/icon-man.png" alt="profile photo avatar" />
+      <nav>
+        <div class="avatar">
+          <img src="./media/icon-man.png" alt="profile photo avatar" />
+        </div>
+        <ul>
+          <li class="home-btn">.home( )</li>
+          <li class="about-btn">.about( )</li>
+          <li class="portfolio-btn">.portfolio( )</li>
+        </ul>
+      </nav>
+
+      <div class="home">
+        <h1>Hello!</h1>
+        <div>
+          <span>I am Gaurav.</span>
+          <p>And I love building websites!</p>
+        </div>
+        <button class="view-cv-btn">View CV</button>
+      </div>
+
+      <div class="about">
+        <div class="box profile">
+          <img src="./media/profile.png" alt="profile" />
+          <span>profile</span>
+        </div>
+        <div class="view-box view-profile">
+          <span class="back-btn back-profile">&times;</span>
+          <span>profile</span>
+          <p>
+            I am a web developer who is proficient in both front-end and
+            back-end. My passion lies in learning new technologies. I am an
+            under graduate engineering student from KIIT, Bhubaneshwar. I have
+            been learning web development for 2 years, in which I learned the
+            following skills HTML, CSS, Bootstrap, JavaScript, Python, MERN,
+            Django and Flask. I have worked with these and developed a few
+            projects. I have also worked in an internship as a group leader and
+            a front-end engineer.
+          </p>
+        </div>
+
+        <div class="box experience">
+          <img src="./media/experience.png" alt="experience" />
+          <span>experience</span>
+        </div>
+        <div class="view-box view-experience">
+          <span class="back-btn back-experience">&times;</span>
+          <span>experience</span>
+          <div>
+            <span class="title">web development intern</span>
+            <span class="c-name">karoStartup</span>
+            <span class="period">march 2022 - april 2022</span>
+            <p>Developed a campus ambassador website -</p>
+            <p>Group leader -</p>
+            <p>Front-end development -</p>
+            <p>Web designing -</p>
+          </div>
+        </div>
+
+        <div class="box skills">
+          <img src="./media/skills.png" alt="skills" />
+          <span>skills</span>
+        </div>
+        <div class="view-box view-skills">
+          <span class="back-btn back-skills">&times;</span>
+          <span>skills</span>
+          <div>
+            <div class="left">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>Bootstrap</p>
+            </div>
+            <div class="right">
+              <p>MERN</p>
+              <p>Python</p>
+              <p>Django</p>
+              <p>Flask</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box connect">
+          <img src="./media/social-media.png" alt="connect" />
+          <span>connect</span>
+        </div>
+        <div class="view-box view-connect">
+          <div class="back-btn back-connect">&times;</div>
+          <div class="row">
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/gaurav-kumar-tripathii"
+                target="_blank"
+                ><img src="./media/socials/linkedin.png" alt="linkedin image"
+              /></a>
+            </div>
+            <div class="social">
+              <a
+                href="https://www.instagram.com/gauravtripathii/"
+                target="_blank"
+                ><img src="./media/socials/instagram.png" alt="instagram image"
+              /></a>
+            </div>
+          </div>
+          <div class="square"></div>
+          <div class="row">
+            <div class="social">
+              <a href="https://github.com/Gauravtripathii" target="_blank"
+                ><img src="./media/socials/github.png" alt="github image"
+              /></a>
+            </div>
+            <div class="social">
+              <a
+                href="https://www.frontendmentor.io/profile/Gauravtripathii"
+                target="_blank"
+                ><img
+                  src="./media/socials/frontendmentor.png"
+                  alt="frontendmentor image"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <div class="project project1">
+          <img src="./media/projects/des1.png" alt="where in the world" />
+          <span class="title"
+            >rest countries api with color theme switcher</span
+          >
+        </div>
+        <div class="project-desc project1-desc">
+          <div class="project-profile">
+            <div class="image">
+              <img
+                src="./media/projects/img-where-in-the-world.png"
+                alt="where in the world"
+              />
             </div>
             <ul>
-                <li class="home-btn">.home( )</li>
-                <li class="about-btn">.about( )</li>
-                <li class="portfolio-btn">.portfolio( )</li>
+              <li>ReactJS</li>
+              <li>RestAPI</li>
+              <li>CSS3</li>
+              <li>CANVA</li>
             </ul>
-        </nav>
-        
-        <div class="home">
-            <h1>Hello!</h1>
-            <div>
-                <span>I am Gaurav.</span>
-                <p>And I love building websites!</p>
+          </div>
+          <div class="details">
+            <div class="title dt1">
+              Rest Countries API With Color Theme Switcher
             </div>
-            <button class="view-cv-btn">View CV</button>
+            <div class="ability">
+              <p class="dat1">Users are able to :</p>
+              <ul class="datd1">
+                <li>See all countries from the API on the homepage</li>
+                <li>
+                  Click on a country to see more detailed information on a
+                  separate page
+                </li>
+                <li>Toggle the color scheme between light and dark mode</li>
+              </ul>
+            </div>
+            <footer>
+              <a
+                href="https://github.com/Gauravtripathii/where-in-the-world/"
+                target="_blank"
+                class="dl1"
+                >github.com/Gauravtripathii/where-in-the-world</a
+              >
+            </footer>
+          </div>
+          <div class="close-desc cd1">&times;</div>
         </div>
-
-        <div class="about">
-            <div class="box profile">
-                <img src="./media/profile.png" alt="profile" />
-                <span>profile</span>
-            </div>
-            <div class="view-box view-profile">
-                <span class="back-btn back-profile">&times;</span>
-                <span>profile</span>
-                <p>
-                    I am a web developer who is proficient in both front-end and back-end. My passion lies in learning new technologies. I am an under graduate engineering student from KIIT, Bhubaneshwar. I have been learning web development for 2 years, in which I learned the following skills HTML, CSS, Bootstrap, JavaScript, Python, MERN, Django and Flask. I have worked with these and developed a few projects. I have also worked in an internship as a group leader and a front-end engineer.
-                </p>
-            </div>
-
-            <div class="box experience">
-                <img src="./media/experience.png" alt="experience" />
-                <span>experience</span>
-            </div>
-            <div class="view-box view-experience">
-                <span class="back-btn back-experience">&times;</span>
-                <span>experience</span>
-                <div>
-                    <span class="title">web development intern</span>
-                    <span class="c-name">karoStartup</span>
-                    <span class="period">march 2022 - april 2022</span>
-                    <p>Developed a campus ambassador website -</p>
-                    <p>Group leader -</p>
-                    <p>Front-end development -</p>
-                    <p>Web designing -</p>
-                </div>
-            </div>
-
-            <div class="box skills">
-                <img src="./media/skills.png" alt="skills" />
-                <span>skills</span>
-            </div>
-            <div class="view-box view-skills">
-                <span class="back-btn back-skills">&times;</span>
-                <span>skills</span>
-                <div>
-                    <div class="left">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="right">
-                        <p>MERN</p>
-                        <p>Python</p>
-                        <p>Django</p>
-                        <p>Flask</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box connect">
-                <img src="./media/social-media.png" alt="connect" />
-                <span>connect</span>
-            </div>
-            <div class="view-box view-connect">
-                <div class="back-btn back-connect">&times;</div>
-                <div class="row">
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/gaurav-kumar-tripathii" target="_blank"><img src="./media/socials/linkedin.png" alt="linkedin image" /></a>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.instagram.com/gauravtripathii/" target="_blank"><img src="./media/socials/instagram.png" alt="instagram image" /></a>
-                    </div>
-                </div>
-                <div class="square"></div>
-                <div class="row">
-                    <div class="social">
-                        <a href="https://github.com/Gauravtripathii" target="_blank"><img src="./media/socials/github.png" alt="github image" /></a>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.frontendmentor.io/profile/Gauravtripathii" target="_blank"><img src="./media/socials/frontendmentor.png" alt="frontendmentor image" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio">
-            
-            <div class="project project1">
-                <img src="./media/projects/des1.png" alt="where in the world" />
-                <span class="title">rest countries api with color theme switcher</span>
-            </div>
-            <div class="project-desc project1-desc">
-                <div class="project-profile">
-                    <div class="image"><img src="./media/projects/img-where-in-the-world.png" alt="where in the world" /></div>
-                    <ul>
-                        <li>ReactJS</li>
-                        <li>RestAPI</li>
-                        <li>CSS3</li>
-                        <li>CANVA</li>
-                    </ul>
-                </div>
-                <div class="details">
-                    <div class="title dt1">Rest Countries API With Color Theme Switcher</div>
-                    <div class="ability">
-                      <p class="dat1">Users are able to :</p>
-                      <ul class="datd1">
-                        <li>See all countries from the API on the homepage</li>
-                        <li>
-                          Click on a country to see more detailed information on a
-                          separate page
-                        </li>
-                        <li>Toggle the color scheme between light and dark mode</li>
-                      </ul>
-                    </div>
-                    <footer>
-                      <a href="https://github.com/Gauravtripathii/where-in-the-world/" target="_blank" class="dl1"
-                        >github.com/Gauravtripathii/where-in-the-world</a
-                      >
-                    </footer>
-                  </div>
-                  <div class="close-desc cd1">&times;</div>
-            </div>
-
-        </div>
+      </div>
     </div>
 
     <script src="./script/pages.js"></script>
     <script src="./script/about.js"></script>
     <script src="./script/portfolio.js"></script>
     <script src="./script/links.js"></script>
-</body>
+  </body>
 </html>

@@ -1,52 +1,217 @@
 .about {
-  float: right;
-  width: 69%;
+  position: absolute;
+  right: 0;
+  width: 70%;
   height: 100%;
+  color: var(--main-color);
   padding: 40px;
-  background-color: var(--green);
-  color: var(--white);
-  font-family: "Open Sans", sans-serif;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about > .box {
+  width: 45%;
+  height: 45%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about > .box > img {
+  width: 150px;
+  height: 150px;
+  transition: 0.5s ease;
+}
+
+.about > .profile {
+  background-color: var(--about-box1);
+}
+
+.about > .experience {
+  background-color: var(--about-box2);
+}
+
+.about > .skills {
+  background-color: var(--about-box3);
+}
+
+.about > .connect {
+  background-color: var(--about-box4);
+}
+
+.about > .box > span {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0;
+  font-weight: 800;
+  transition: 0.5s ease;
+  cursor: default;
+  color: white;
+}
+
+/* box views */
+
+.view-profile {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: var(--about-box1);
+  color: white;
+  padding: 15px;
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
-  display: none;
 }
 
-.about a {
-    color: var(--white);
-}
-
-.about span {
-  font-weight: 800;
+.view-box > span {
   text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
 }
 
-.about > span {
-  font-size: 22px;
-}
-
-.about > .education {
-  width: 50%;
-}
-
-.about > .class > span.topic {
+.view-profile > p {
   font-size: 32px;
 }
 
-.about > .class > div {
-  margin-top: 15px;
-  padding-left: 30px;
+.view-experience {
+  position: absolute;
+  background-color: var(--about-box2);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  width: 90%;
+  height: 90%;
+  padding: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.about > .class p.sub-topic {
-  font-size: 20px;
+.view-experience > div {
+  display: flex;
+  flex-direction: column;
 }
 
-.about > .class span.date {
-  font-size: 15px;
+.view-experience > div > .title {
+  font-size: 40px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: right;
 }
 
-.about > .class p.para {
-  font-size: 15px;
-  font-weight: 800;
+.view-experience > div > .c-name {
+  font-size: 35px;
+  text-align: right;
 }
+
+.view-experience > div > .period {
+  font-size: 30px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.view-experience > div > p {
+  font-size: 30px;
+  text-align: right;
+}
+
+.view-skills {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: var(--about-box3);
+  color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.view-skills > div {
+  width: 100%;
+  font-size: 50px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.view-skills > div > div {
+  width: 50%;
+  text-align: center;
+}
+.view-skills > div > .left {
+  border-right: 2px solid white;
+}
+.view-skills > div > .right {
+  border-left: 2px solid white;
+}
+
+.view-connect {
+  position: absolute;
+  z-index: 0;
+  width: 90%;
+  height: 90%;
+  background-color: var(--about-box4);
+  color: white;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.view-connect > .square {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 2px solid white;
+  z-index: -1;
+}
+
+.view-connect > .row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.view-connect > .row > .social {
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: var(--about-box4);
+}
+.view-connect > .row > .social:hover {
+  box-shadow: 0 0 7px white;
+}
+.view-connect > .row > .social > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view-connect > .row > .social > a > img {
+  width: 70%;
+  height: 70%;
+}
+
+.back-btn {
+  position: absolute;
+  /* font-size: 0; */
+  font-size: 60px;
+  top: 0;
+  right: 15px;
+  cursor: default;
+}
+
+.back-btn:hover {
+  text-shadow: 0 0 7px var(--main-color);
+}
+
+
+

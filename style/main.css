@@ -1,22 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Libre+Franklin:wght@900&family=Open+Sans:wght@300;400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Notable&family=Open+Sans&family=Solway&display=swap');
 
 :root {
-  --yellow: #ffdf2b;
-  --green: #94dd26;
-  --pink: #db006e;
-  --gray: #999999;
-  --white: #ffffff;
-  --blue: #004aad;
+  --main-bg: #2c3639;
+  --main-color: #dcd7c9;
+  --nav-border: #a27b5c;
 
-  /* fonts */
-
-  --nav-name-des: "Libre Franklin", sans-serif;
-  --nav-links: "Open Sans", sans-serif; /*400*/
-  --nav-connect: "Open Sans", sans-serif; /*300*/
-
-  --home-hello: "Bangers", cursive;
-  --home-intro: "Open Sans", sans-serif; /*800*/
-  --home-button: "Open Sans", sans-serif;
+  /* about page */
+  --about-box1: #fb3f9e;
+  --about-box2: #a2f804;
+  --about-box3: #68d27a;
+  --about-box4: #8b1f6d;
 }
 
 * {
@@ -28,4 +21,11 @@
 .container {
   width: 100vw;
   height: 100vh;
+  background-color: var(--main-bg);
+}
+
+::selection {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  text-shadow: 0 0 5px orangered;
 }

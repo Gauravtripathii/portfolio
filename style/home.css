@@ -1,54 +1,45 @@
 .home {
-  float: right;
-  width: 69%;
+  position: absolute;
+  right: 0;
+  width: 70%;
   height: 100%;
-  padding: 100px;
-  background-color: var(--yellow);
+  color: var(--main-color);
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-evenly;
 }
 
 .home > h1 {
-  font-family: var(--home-hello);
-  text-transform: uppercase;
-  font-size: 105px;
-  font-weight: 400;
-  color: var(--white);
-  text-shadow: 0 0 20px var(--green);
+  font-size: 117px;
+  font-family: "Cinzel Decorative", cursive;
 }
 
-.home > p {
-  color: var(--white);
-  font-family: var(--home-intro);
-  font-weight: 800;
-  font-size: 60px;
+.home > div {
+  font-family: "Solway", serif;
 }
 
-.home > span {
-  color: var(--white);
-  font-family: var(--home-intro);
-  font-weight: 800;
-  font-size: 45px;
+.home > div > span {
+  font-size: 80px;
+}
+
+.home > div > p {
+  font-size: 52px;
 }
 
 .home > button {
-  border: 2px solid var(--white);
-  background-color: var(--white);
-  color: var(--yellow);
-  font-family: var(--home-button);
-  font-weight: bold;
+  font-family: "Notable", sans-serif;
   font-size: 30px;
-  width: 210px;
-  height: 50px;
-  padding: 15px;
-  border-radius: 25px;
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: var(--main-color);
+  color: var(--main-bg);
+  border: 2px solid var(--main-color);
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 30px;
 }
+
 .home > button:hover {
-  background-color: var(--yellow);
-  color: var(--white);
+  color: var(--main-color);
+  background-color: var(--main-bg);
 }

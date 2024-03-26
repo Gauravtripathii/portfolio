@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 
 function Homepage() {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full relative">
       <Header />
       <Hero />
     </div>

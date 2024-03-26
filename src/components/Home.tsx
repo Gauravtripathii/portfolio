@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const positions = ["Frontend", "Backend", "Fullstack"];
 
-function Hero() {
+function Home() {
   const [position, setPosition] = useState<string>(positions[0]);
   useEffect(() => {
     const timeoutId = setInterval(() => {
@@ -16,7 +16,7 @@ function Hero() {
   return (
     <div className="w-full h-5/6 p-10">
       {/* positions intro */}
-      <div className="text-white text-6xl font-semibold flex flex-col gap-2">
+      <div className="text-red-50 text-6xl font-semibold flex flex-col gap-2">
         <span>
           A <span className="text-red-500">{position}</span>
         </span>
@@ -26,4 +26,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Home;

@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Homepage from "./pages/Homepage";
+import Hero from "./pages/Hero";
 
 function App() {
   return (
     <Router>
       <main className="bg-[#050A18] h-screen w-full">
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Hero />} />
         </Routes>
       </main>
     </Router>

@@ -1,13 +1,13 @@
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Home from "../components/Home";
 
-function Homepage() {
+function Hero() {
   return (
     <div className="w-full h-full relative">
       <Header />
-      <Hero />
+      <Home />
     </div>
   );
 }
 
-export default Homepage;
+export default Hero;

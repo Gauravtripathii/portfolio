@@ -10,7 +10,7 @@ function Header() {
       </div>
 
       {/* hamburger icon */}
-      <div className="w-14 cursor-pointer">
+      <div className="w-10 lg:w-14 cursor-pointer">
         <img src={hamburger_icon} alt="open/close menu" className="w-full h-auto" />
       </div>
     </header>

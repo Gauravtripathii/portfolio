@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       {/* logo */}
-      <div>
+      <div className="h-1/6 w-full border-b items-center">
         <Logo />
       </div>
     </header>

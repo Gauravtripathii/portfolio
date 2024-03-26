@@ -2,7 +2,7 @@ import Header from "../components/Header";
 
 function Homepage() {
   return (
-    <div className="w-full h-1/6 flex items-center border-b">
+    <div className="w-full h-full">
       <Header />
     </div>
   );

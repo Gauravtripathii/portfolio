@@ -1,11 +1,17 @@
 import Logo from "./Logo";
+import hamburger_icon from "../../public/menu.png";
 
 function Header() {
   return (
-    <header>
+    <header className="h-1/6 w-full border-b flex items-center justify-between px-10">
       {/* logo */}
-      <div className="h-1/6 w-full border-b items-center">
+      <div className="">
         <Logo />
+      </div>
+
+      {/* hamburger icon */}
+      <div className="w-14 cursor-pointer">
+        <img src={hamburger_icon} alt="open/close menu" className="w-full h-auto" />
       </div>
     </header>
   );

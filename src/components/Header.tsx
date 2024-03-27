@@ -28,13 +28,13 @@ function Header() {
 
       {/* menu */}
       <div
-        className={`w-full h-1/4 bg-black absolute top-0 left-0 opacity-75 ${
+        className={`w-full h-1/4 lg:w-1/2 lg:h-full bg-black absolute top-0 left-0 opacity-75 ${
           menuOpen ? "block" : "hidden"
         }`}
         onClick={() => setMenuOpen(!menuOpen)}
       ></div>
       <div
-        className={`w-full h-3/4 bg-red-50 absolute bottom-0 right-0 flex flex-col items-center justify-center gap-10 text-2xl font-semibold text-[#050A18] ${
+        className={`w-full h-3/4 lg:w-1/2 lg:h-full bg-red-50 absolute bottom-0 right-0 flex flex-col items-center justify-center gap-10 text-2xl font-semibold text-[#050A18] lg:gap-14 ${
           menuOpen ? "block" : "hidden"
         }`}
       >

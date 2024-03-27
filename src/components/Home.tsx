@@ -34,7 +34,7 @@ function Home() {
         </div>
 
         {/* socials */}
-        <div className="text-slate-400 mt-5 w-full font-mono xl:mt-14">SOCIALS</div>
+        <div className="text-slate-400 mt-5 w-full font-mono xl:mt-14 xl:mb-5">SOCIALS</div>
         <div className="w-full flex flex-col gap-3 xl:gap-7">
           <div className="border-b w-full flex items-center justify-between px-1 hover:text-red-500 hover:border-red-500 hover:-translate-y-1 transition  cursor-pointer">
             <span>LinkedIn</span>

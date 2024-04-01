@@ -16,7 +16,7 @@ function Home() {
   return (
     <div className="w-full h-5/6 p-10 flex flex-col gap-10 lg:flex-row">
       {/* positions intro */}
-      <div className="text-red-50 text-6xl font-semibold flex flex-col gap-2 lg:w-3/4 lg:items-center lg:justify-center lg:text-7xl xl:text-9xl">
+      <div className="text-red-50 text-6xl sm:text-8xl font-semibold flex flex-col gap-2 lg:w-3/4 lg:items-center lg:justify-center lg:text-7xl xl:text-9xl">
         <span>
           A <span className="text-red-500">{position}</span>
         </span>

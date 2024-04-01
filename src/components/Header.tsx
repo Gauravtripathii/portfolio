@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 interface variantsType {
+  [key: string]: { opacity: number; x?: string; y?: string };
   open: { opacity: number; x?: string; y?: string; };
   closed: { opacity: number; x?: string; y?: string; };
   openT: { opacity: number; x?: string; y?: string; };

@@ -9,17 +9,17 @@ import { motion } from "framer-motion";
 
 interface variantsType {
   [key: string]: { opacity: number; x?: string; y?: string };
-  open: { opacity: number; x?: string; y?: string; };
-  closed: { opacity: number; x?: string; y?: string; };
-  openT: { opacity: number; x?: string; y?: string; };
-  closedT: { opacity: number; x?: string; y?: string; };
+  open: { opacity: number; x?: string; y?: string };
+  closed: { opacity: number; x?: string; y?: string };
+  openT: { opacity: number; x?: string; y?: string };
+  closedT: { opacity: number; x?: string; y?: string };
 }
 
 const smallScreenVariants: variantsType = {
   open: { opacity: 1, x: "0" },
   closed: { opacity: 0, x: "100%" },
   openT: { opacity: 0.75, x: "0" },
-  closedT: { opacity: 0, x: "200%"},
+  closedT: { opacity: 0, x: "200%" },
 };
 
 const largeScreenVariants: variantsType = {
@@ -38,7 +38,12 @@ function Header() {
       ? setVariants(smallScreenVariants)
       : setVariants(largeScreenVariants);
   return (
-    <header className="h-1/6 w-full border-b flex items-center justify-between px-10 z-20">
+    <motion.header
+      initial={{ y: "-100%" }}
+      animate={{ y: 0 }}
+      transition={{ ease: "easeOut", duration: 0.5 }}
+      className="h-1/6 w-full border-b flex items-center justify-between px-10 z-20"
+    >
       {/* logo */}
       <div className="">
         <Logo />
@@ -91,7 +96,7 @@ function Header() {
           Work
         </NavLink>
       </motion.div>
-    </header>
+    </motion.header>
   );
 }
 

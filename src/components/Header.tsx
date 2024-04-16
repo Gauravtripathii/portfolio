@@ -19,14 +19,14 @@ const smallScreenVariants: variantsType = {
   open: { opacity: 1, x: "0" },
   closed: { opacity: 0, x: "100%" },
   openT: { opacity: 0.75, x: "0" },
-  closedT: { opacity: 0, x: "100%" },
+  closedT: { opacity: 0, x: "200%"},
 };
 
 const largeScreenVariants: variantsType = {
   open: { opacity: 1, y: "0" },
   closed: { opacity: 0, y: "100%" },
   openT: { opacity: 0.75, y: "0" },
-  closedT: { opacity: 0, y: "100%" },
+  closedT: { opacity: 0, y: "200%" },
 };
 
 function Header() {

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { useRef } from "react";
 import Hero from "./pages/Hero";
 
@@ -18,9 +18,7 @@ function App() {
           className="absolute w-20 h-20 border-2 border-slate-400 rounded-full -translate-x-1/2 -translate-y-[180%] hidden xl:block"
           ref={mouseFollower}
         ></div>
-        <Routes>
-          <Route path="/" element={<Hero />} />
-        </Routes>
+        <Hero />
       </main>
     </Router>
   );

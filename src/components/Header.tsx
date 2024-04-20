@@ -1,11 +1,8 @@
 import { useState } from "react";
-
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import Logo from "./Logo";
 import hamburger_icon from "../assets/menu.png";
-
-import { NavLink } from "react-router-dom";
-
-import { motion } from "framer-motion";
 
 interface variantsType {
   [key: string]: { opacity: number; x?: string; y?: string };
@@ -37,6 +34,11 @@ function Header() {
     window.innerWidth < 1024
       ? setVariants(smallScreenVariants)
       : setVariants(largeScreenVariants);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <motion.header
       initial={{ y: "-100%" }}
@@ -77,6 +79,7 @@ function Header() {
       >
         <NavLink
           to="/"
+          onClick={closeMenu} // Close menu when Home link is clicked
           className=" hover:text-red-500 hover:underline hover:underline-offset-4 transition-colors duration-300"
         >
           Home
@@ -84,6 +87,7 @@ function Header() {
 
         <NavLink
           to="/about"
+          onClick={closeMenu} // Close menu when About link is clicked
           className="hover:text-red-500 hover:underline hover:underline-offset-4 transition-colors duration-300"
         >
           About
@@ -91,6 +95,7 @@ function Header() {
 
         <NavLink
           to="/work"
+          onClick={closeMenu} // Close menu when Work link is clicked
           className=" hover:text-red-500 hover:underline hover:underline-offset-4 transition-colors duration-300"
         >
           Work

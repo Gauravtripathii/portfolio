@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Home from "../components/Home";
+import Work from "../components/Work";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -9,6 +10,7 @@ function Hero() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
       </Routes>
     </div>
   );

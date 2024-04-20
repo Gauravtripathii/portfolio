@@ -1,7 +1,9 @@
+import project01_img from "../assets/project_media/project01.png";
+
 const Work = () => {
   return (
-    <div>
-      <h1>Work</h1>
+    <div className="w-full h-5/6">
+        
     </div>
   );
 };

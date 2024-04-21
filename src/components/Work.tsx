@@ -1,4 +1,4 @@
-import project01_img from "../assets/project_media/project01.png";
+// import project01_img from "../assets/project_media/project01.png";
 
 const Work = () => {
   return (

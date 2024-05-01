@@ -3,7 +3,7 @@
 const Work = () => {
   return (
     <div className="w-full h-5/6">
-        
+        some changes
     </div>
   );
 };
